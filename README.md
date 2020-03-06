@@ -1,5 +1,5 @@
 # Story Point Poker App
-Written in PHP with MySQL.
+Handful tool for estimating the tasks that used a fibonacci sequence for story points. Written in PHP with MySQL.
 
 ### /index.php
 - List of members and can access the member points.
