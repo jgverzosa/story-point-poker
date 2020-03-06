@@ -1,11 +1,11 @@
-## Story Point Poker App
+# Story Point Poker App
 Written in PHP with MySQL.
 
-# /index.php
+### /index.php
 - List of members and can access the member points.
 
-# /show.php
+### /show.php
 - Display the points status.
 
-# /maintenance.php
+### /maintenance.php
 - Add or remove a member.
