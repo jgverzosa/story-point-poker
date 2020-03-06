@@ -5,7 +5,7 @@ Handful tool for estimating the tasks that used a fibonacci sequence for story p
 List of members and can access the member points.
 
 ### /show.php
-Display the points status.
+Display the point status.
 
 ### /maintenance.php
 Add or remove a member.
