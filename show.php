@@ -142,20 +142,20 @@ if($reset){
                         $('#'+v.UserName+'_points').html(points);
                     });
                     clearInterval(apiChecker);
-                    sortPoints ();
+                    sort('ul.employee-list');
                 }				
             },
         });	
 	}, 800); //5 seconds
 
-    function sortPoints () {
-        $(".listitems li").sort(sort_li).appendTo('.listitems');
-        console.log('teste');
-        function sort_li(a, b){
-            console.log(sort_li);
-            // return ($(b).data('position')) < ($(a).data('position')) ? 1 : -1;    
-        }
-    }
+    function sort(selector) { 
+        $(selector).children("li").sort(function(a, b) { 
+            var A = $(a).children("span.vote-points").text(); 
+            var B = $(b).children("span.vote-points").text(); 
+            console.log(b)
+            return (B - A);
+        }).appendTo(selector); 
+    }    
 
     function play(){
         var audio = document.getElementById("audio");
